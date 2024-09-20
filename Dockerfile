@@ -3,7 +3,7 @@ FROM ubuntu:22.04
 
 # Install necessary packages
 RUN apt-get update && \
-    apt-get install -y curl unzip tmate sudo&& \
+    apt-get install -y curl unzip tmate sudo && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
